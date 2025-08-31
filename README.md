@@ -16,7 +16,7 @@ Follow these steps to set up the project locally:
 
 ### 1. Clone the Repository
 
-git clone https://github.com/your-username/legal-case-argument-generator.git
+git clone [https://github.com/Sweta-singh23/Legal-Case-Argument-Generator]
 cd legal-case-argument-generator
 
 Initialize Node.js Project
