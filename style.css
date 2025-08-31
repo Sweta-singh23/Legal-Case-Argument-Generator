@@ -1,0 +1,133 @@
+/* ----------------------- General Reset ----------------------- */
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+  background-size: 800% 800%;
+  animation: gradientAnimation 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  color: #222;
+  
+}
+
+/* Animated gradient keyframes */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ----------------------- Container ----------------------- */
+.app-container {
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/* ----------------------- Titles ----------------------- */
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  color: #6a1b9a;
+  margin-bottom: 5px;
+}
+
+h5 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+/* ----------------------- Cards ----------------------- */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* ----------------------- Textarea ----------------------- */
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Lora', serif;
+  resize: vertical;
+  margin: 10px 0 15px 0;
+}
+
+/* ----------------------- Select ----------------------- */
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* ----------------------- Buttons ----------------------- */
+button {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Center the Generate Arguments button */
+#generateBtn {
+  display: block;
+  margin: 0 auto; /* center horizontally */
+}
+
+button:hover {
+  background-color: #8e24aa;
+  box-shadow: 0 0 12px rgba(142,36,170,0.6);
+}
+
+/* ----------------------- Flex container for output buttons ----------------------- */
+.buttons-container {
+  display: flex;
+  justify-content: center;  /* center the buttons horizontally */
+  gap: 10px;                /* space between buttons */
+  margin-top: 10px;         /* space from generated arguments */
+}
+
+/* ----------------------- Output Card ----------------------- */
+.output-card {
+  display: none; /* hidden until arguments are generated */
+}
+
+.output-card h3 {
+  margin-top: 0;
+  color: #6a1b9a;
+}
+
+/* Style the generated arguments nicely */
+#arguments p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+/* ----------------------- Footer ----------------------- */
+footer {
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: #666;
+  text-align: center;
+  padding: 15px;
+}
